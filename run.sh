@@ -7,7 +7,7 @@ cp ../build/libMyCppProgram.so ./
 javac MyCppWrapper.java
 javac MyApplet.java
 
-# Генерация заголовочного файла JNI (если это нужно, но обычно это делается только один раз)
+# Генерация заголовочного файла JNI
 javah -jni MyCppWrapper
 
 # Вывод "Good!" для проверки успешного выполнения

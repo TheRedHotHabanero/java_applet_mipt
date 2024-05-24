@@ -10,7 +10,7 @@ public class MyApplet extends Applet {
 
     public void paint(Graphics g) {
         cppWrapper.runCppMain();
-        g.drawString("Hello from Java Applet!", 20, 20);
+        g.drawString("Hello from Java Applet!", 100, 100);
     }
 }
 

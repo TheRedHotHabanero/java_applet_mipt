@@ -1,4 +1,3 @@
-// MyCppWrapper.java
 public class MyCppWrapper {
     static {
         System.loadLibrary("MyCppProgram");

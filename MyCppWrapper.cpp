@@ -1,13 +1,13 @@
-// MyCppWrapper.cpp
 #include <jni.h>
-#include "MyCppWrapper.h"
 #include <iostream>
+#include "MyCppWrapper.h"
 
-// Объявление функции main, чтобы компилятор видел ее
 int main();
 
 extern "C" {
     JNIEXPORT void JNICALL Java_MyCppWrapper_runCppMain(JNIEnv *, jobject) {
+        std::cout << "Hello from C++!" << std::endl;
         main();
+        std::cout << "Goodbye from C++!" << std::endl;
     }
 }
